@@ -1,7 +1,18 @@
 {
     "files.associations": {
         "algorithm": "cpp",
-        "limits": "cpp"
+        "limits": "cpp",
+        "vector": "cpp",
+        "iostream": "cpp",
+        "deque": "cpp",
+        "initializer_list": "cpp",
+        "queue": "cpp",
+        "stack": "cpp",
+        "type_traits": "cpp",
+        "xstring": "cpp",
+        "xtree": "cpp",
+        "xutility": "cpp",
+        "xiosbase": "cpp"
     },
     "git.ignoreLimitWarning": true
 }

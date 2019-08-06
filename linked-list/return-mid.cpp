@@ -33,9 +33,6 @@ node* midpoint_linkedlist(node *head)
 //for odd l, stopping: fast = null
 //return slow
 
-//NOTE: in case: even length has to return second of two middles
-//then slow and fast both at head, same loop stopping, 
-//reason for loop stopping for even/odd will reverse
 
 node* midpoint_linkedlist(node *head)
 {
@@ -49,6 +46,24 @@ node* midpoint_linkedlist(node *head)
         fast = fast -> next -> next;
     }
     return slow;
+    
+}
+
+//NOTE: in case: even length has to return second of two middles
+//then slow and fast both at head, same loop stopping, 
+//reason for loop stopping for even/odd will reverse
+
+int getMiddle(Node *head)
+{
+    if (head == NULL)
+        return -1;
+    Node* slow = head;
+    Node* fast = head;
+    while (fast != NULL && fast -> next != NULL){
+        slow = slow -> next;
+        fast = fast -> next -> next;
+    }
+    return slow -> data;
     
 }
 

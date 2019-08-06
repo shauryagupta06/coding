@@ -40,7 +40,7 @@ Node* mergeTwoLLs(Node *head1, Node *head2) {
     }
     
     //Note: tail is just used as a temporary storage variable
-    //after one of these two steps, tail won't pint on the actual tail of the final LL
+    //after one of these two steps, tail won't point on the actual tail of the final LL
     if (head1 == NULL){
         ftail -> next = head2;
     }
